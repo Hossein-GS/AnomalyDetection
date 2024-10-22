@@ -3,16 +3,25 @@
 ## Description
 This Project simulates a data stream with random anomalies across the data. The anomalies will be detected using the Holt-Winters Algorithm and will be displayed in a plot. 
 
+## Setup Instructions
+1. Clone The repository
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On macOS/Linux
+   .\venv\Scripts\activate   # On Windows
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the project:
+   ```bash
+   python src/main.py
+   ```
+
 ## Showcase
 ![Alt text](/images/Plot.PNG)
-
-## Libraries Used
-In this project the following libraries are used:
-1. numpy==2.1.2
-2. matplotlib==3.9.2
-3. statsmodels==0.14.4
-
-*__Note:__ the libraries and their versions can be viewed in requirements.txt file at the root directory*
 
 ## Algorithm Used (Holt-Winters)
 For this project I used __Holt-Winters Algorithm__, which is a time series forcasting technique that models data with __trend__ and __seasonality__.
@@ -43,6 +52,14 @@ The anomalies will be marked if the difference between residuals and __mean_resi
 
 ## update function
 This function updates the plot every frame. The __forcasted values__, and the __data stream__ will be plotted, and other plot attributes such as __title__, __xlabel__, and __ylabel__ will be set.
+
+## Libraries Used
+In this project the following libraries are used:
+1. numpy==2.1.2
+2. matplotlib==3.9.2
+3. statsmodels==0.14.4
+
+*__Note:__ the libraries and their versions can be viewed in requirements.txt file at the root directory*
 
 
 
